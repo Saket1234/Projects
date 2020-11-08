@@ -1,0 +1,11 @@
+{
+    "quiz":
+    [
+        {"Sno":1, "question":"What is a group of owls called?","option1":"an Army","option2":"a Bewilderment","option3":"a Parliament","option4":"a Surprise"},
+        {"Sno":2, "question":"How many arms (mistakenly called tentacles) do octopuses have?","option1":"8","option2":"10","option3":"12","option4":"20"},
+        {"Sno":3, "question":"Which of these animals uses echolocation to navigate?","option1":"Dolphins","option2":"Mice","option3":"Pigs","option4":"Naked mole rats"},
+        {"Sno":4, "question":"In what country would you find the world's northernmost wild monkey population?","option1":"India","option2":"Japan","option3":"Spain","option4":"United States"},
+        {"Sno":5, "question":"Which of the following is NOT a type of antelope?","option1":"Impala","option2":"Gazelle","option3":"Marten","option4":"Springbok"},
+        {"Sno":6, "question":"How many rhinoceroses still exist in the wild?","option1":"5","option2":"14","option3":"about 25,000","option4":"more than a million"}
+    ]
+}

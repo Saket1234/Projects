@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+}
+
+h1, h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:saddlebrown;
+}
+
+input[type=checkbox] { 
+    vertical-align: middle; 
+    position: relative; 
+    bottom: 1px; 
+} 
+
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    color: saddlebrown;
+    font-size: large;
+    display: block;
+}
+ 

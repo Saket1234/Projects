@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style src="quiz.component.css"></style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<img src="assets/animals.jpg" style="text-align: center;">
+<h1>Welcome to Saket's Zoo Quiz</h1>
+<div>
+    <input type="button" class="btn btn-success" [value]="msg" (click)="loadQuiz()"/><br>
+    <hr>
+    <div *ngIf="flag">
+        <h3>Click save after answering each question</h3>
+        <hr>
+        <form>
+            <div *ngFor="let q of quizInfo">
+                <form #userRef="ngForm" (ngSubmit)="checkAnswers(userRef.value,q)" >
+                    <h3>{{q.Sno}}. {{q.question}}</h3><br>
+                    <label for="option1"><input type="checkbox" id="option1" name="option1" value="a" ngModel>   {{q.option1}}  </label>
+                    <label for="option2"><input type="checkbox" id="option2" name="option2" value="b" ngModel>   {{q.option2}}  </label>
+                    <label for="option3"><input type="checkbox" id="option3" name="option3" value="c" ngModel>    {{q.option3}}  </label>
+                    <label for="option4"><input type="checkbox" id="option4" name="option4" value="d" ngModel>   {{q.option4}}  </label><br><br>
+                    <input type="submit" class="btn btn-success" value="Save">
+                    <hr width="65%">
+                </form>
+            </div>
+            <br>
+            <input type="Submit" class="btn btn-primary" [disabled]="clicked" (click)="Results();clicked=true;">
+        </form>
+    </div>
+    <h3>{{result}}</h3>
+    <h3>{{key}}</h3>
+</div>
+    
+</body>
+</html>
